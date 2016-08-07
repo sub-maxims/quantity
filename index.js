@@ -1,4 +1,6 @@
 var express = require('express');
+var app = express();
+app.set('port', process.env.PORT || 8080);
 
 app.get('/webhook', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' &&
