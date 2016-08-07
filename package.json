@@ -4,7 +4,7 @@
   "description": "An essay on Facebooks Messenger Platform",
   "main": "index.js",
   "scripts": {
-    "test": "not yet"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
