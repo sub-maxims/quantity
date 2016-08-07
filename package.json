@@ -1,0 +1,27 @@
+{
+  "name": "quantity",
+  "version": "1.0.0",
+  "description": "An essay on Facebooks Messenger Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "not yet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sub-maxims/quantity.git"
+  },
+  "keywords": [
+    "chatbot",
+    "facebook",
+    "messenger"
+  ],
+  "author": "Hendrik Kurniawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sub-maxims/quantity/issues"
+  },
+  "homepage": "https://github.com/sub-maxims/quantity#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
