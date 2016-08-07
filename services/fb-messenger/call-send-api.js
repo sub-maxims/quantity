@@ -1,6 +1,6 @@
 var request = require('request');
 
-module.export = (messageData) => {
+module.exports = (messageData) => {
   request({
     uri: 'https://graph.facebook.com/v2.6/me/messages',
     qs: { access_token: 'EAAYt1Xh9XZCwBAEsjzZAtjsZCPKbxnIivHiufIcL83amZAUZBoO0KTiMX9YkVLTSg8YrbMIjikP9IpGQy9SoaPUo9k49SgR4WTx4MVsJQbvrInyxYg7lWZB5xPwYSQkNWCTEUdB5cbuxKzZAIPVLnaF3W0ODd3lmdqREnQKr0XLhwZDZD' },

@@ -1,6 +1,5 @@
 var app = require('./server');
-var receivedMessage = require('./services/fb-messenger');
-
+var fbMessenger = require('./services/fb-messenger');
 
 /*
  * Delivery Confirmation Event
@@ -57,7 +56,7 @@ app.post('/webhook', function (req, res) {
         if (messagingEvent.optin) {
           // receivedAuthentication(messagingEvent);
         } else if (messagingEvent.message) {
-          receivedMessage(messagingEvent);
+          fbMessenger.receivedMessage(messagingEvent);
         } else if (messagingEvent.delivery) {
           receivedDeliveryConfirmation(messagingEvent);
         } else if (messagingEvent.postback) {
