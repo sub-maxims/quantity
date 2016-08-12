@@ -1,6 +1,6 @@
-var callSendAPI = require('./call-send-api');
+var callSendAPI = require('../call-send-api');
 
-exports.sendTextMessage = (recipientId, messageText) => {
+module.exports = (recipientId, messageText) => {
   var messageData = {
     recipient: {
       id: recipientId

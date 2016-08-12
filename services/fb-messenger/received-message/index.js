@@ -35,9 +35,9 @@ module.exports = (event) => {
         break;
 
       default:
-        sendTextMessage.sendTextMessage(senderID, messageText);
+        sendTextMessage(senderID, messageText);
     }
   } else if (messageAttachments) {
-    sendTextMessage.sendTextMessage(senderID, "Message with attachment received");
+    sendTextMessage(senderID, "Message with attachment received");
   }
 }
