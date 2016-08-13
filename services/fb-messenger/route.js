@@ -33,7 +33,7 @@ router.post('/webhook', function (req, res) {
         } else if (messagingEvent.delivery) {
           fbMessenger.receivedDeliveryConfirmation(messagingEvent);
         } else if (messagingEvent.postback) {
-          receivedPostback(messagingEvent);
+          fbMessenger.receivedPostback(messagingEvent);
         } else {
           console.log("Webhook received unknown messagingEvent: ", messagingEvent);
         }

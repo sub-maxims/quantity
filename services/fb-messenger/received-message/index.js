@@ -1,4 +1,5 @@
-var sendTextMessage = require('./send-text-message.js');
+var sendTextMessage = require('./send-text-message.js'),
+  sendGenericMessage = require('./send-generic-message');
 
 module.exports = (event) => {
     const senderID = event.sender.id;
